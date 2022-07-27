@@ -9,7 +9,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        variablesYConstantes()
+        //variablesYConstantes()
+        tiposDeDatos()
     }
 
 
@@ -52,6 +53,10 @@ class MainActivity : AppCompatActivity() {
         // decimales (float double)
         val myFloat: Float = 1.5f
         val myDouble = 1.5
+        val myDouble2 = 2.6
+        val myDouble3 = 1
+        val myDouble4 = myDouble + myDouble2 + myDouble3
+        println(myDouble4)
 
     }
 
