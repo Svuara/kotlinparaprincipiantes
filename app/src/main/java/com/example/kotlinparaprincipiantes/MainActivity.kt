@@ -10,10 +10,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //variablesYConstantes()
-        tiposDeDatos()
+        sentenciaIf()
+
     }
 
-
+// 1 VARIABLES
+    // 2 TIPOS DE DATOS
+    // 3 SANTENCIAS IF
     private fun variablesYConstantes() {
 
         // Variables
@@ -60,5 +63,11 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    private fun sentenciaIf(){
+        val myNumber = 9
+        if (myNumber < 10) {
+            println("$myNumber es menor que 10")
+        }
 
+    }
 }
