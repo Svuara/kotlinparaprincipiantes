@@ -10,16 +10,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //variablesYConstantes()
-        sentenciaIf()
+       sentenciawhen()
 
     }
 
-// 1 VARIABLES
-    // 2 TIPOS DE DATOS
-    // 3 SANTENCIAS IF
     private fun variablesYConstantes() {
 
-        // Variables
+        // 1 VARIABLES
+
 
         var miPrimerVariable = " hola Robertito "
         println(miPrimerVariable)
@@ -35,8 +33,8 @@ class MainActivity : AppCompatActivity() {
         println(miPrimerCosntante)
 
     }
-    /* tipos de datos
-    */
+    // 2 TIPOS DE DATOS
+
     // string cadena de tecxto
 
 
@@ -62,6 +60,7 @@ class MainActivity : AppCompatActivity() {
         println(myDouble4)
 
     }
+    // 3 SANTENCIAS IF
 
     private fun sentenciaIf(){
         val myNumber = 60
@@ -76,4 +75,45 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+    //4 when con String
+    fun sentenciawhen(){
+        val country = "Canada"
+        when(country){
+            "España", "Bolivia", "Venezuela" ->{
+               println("El idioma es Español")
+        } "Mexico" -> {
+            println("El idioma es Español")
+        } "Perú" -> {
+            println("El idioma es Español")
+        } "Colombia" -> {
+            println("El idioma es Español")
+        } "Argentina" -> {
+            println("El idioma es Español")
+        } "EEUU" -> {
+            println("El idioma es Ingles")
+        } "Francia" -> {
+            println("El idioma es Frances")
+
+        }else -> {
+            println("no conozco el idioma")
+        }
+    }
+        //when con Int
+        val age =28
+        when (age){
+            0,1,2 ->{
+                println("Eres un bebe")
+            } in 3 .. 10-> {
+            println("Eres un niño")
+        } in 11 .. 17 -> {
+            println("Eres un adolecente")
+        } in 18 .. 69 -> {
+            println("Eres un adulto")
+        } in 70 .. 99 -> {
+            println("Eres un anciano")
+        } else ->{
+            println("Muerto")
+        }
+        }
+}
 }
