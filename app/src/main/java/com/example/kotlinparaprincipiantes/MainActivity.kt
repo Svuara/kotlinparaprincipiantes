@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //variablesYConstantes()
-       sentenciawhen()
+       arrays()
 
     }
 
@@ -116,4 +116,31 @@ class MainActivity : AppCompatActivity() {
         }
         }
 }
+        // 5 -arrays - arreglos
+        fun arrays(){
+        val nombre = "Roberto"
+        val apellido = "Encina"
+        val compañia = "Teto"
+        val edad = "39"
+            //no entiendo porque queda asi lo copie igual
+            val myArrays :ArrayList<String> = arrayListOf<String>()
+            //primero creas el array  = y esto seria que especificas que es una lista?
+
+            myArrays.add(nombre)
+            myArrays.add(apellido)
+            myArrays.add(compañia)
+            myArrays.add(edad)
+
+            println(myArrays)
+
+            myArrays.addAll(listOf("hola", "Bienvenidos"))
+            println(myArrays)
+
+            val nombre :String = myArray[2]
+            println(nombre)
+
+
+
+
+        }
 }
