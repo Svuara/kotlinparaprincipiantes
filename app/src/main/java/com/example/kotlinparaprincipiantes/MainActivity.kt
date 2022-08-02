@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //variablesYConstantes()
-       arrays()
+       Arrays()
 
     }
 
@@ -117,7 +117,7 @@ class MainActivity : AppCompatActivity() {
         }
 }
         // 5 -arrays - arreglos
-        fun arrays(){
+        fun Arrays(){
         val nombre = "Roberto"
         val apellido = "Encina"
         val compañia = "Teto"
@@ -136,8 +136,18 @@ class MainActivity : AppCompatActivity() {
             myArrays.addAll(listOf("hola", "Bienvenidos"))
             println(myArrays)
 
-            val nombre :String = myArray[2]
-            println(nombre)
+            println(myArrays[2])
+            println("la posicion es "  + myArrays[2])
+            myArrays[5] = "Adios"
+            println(myArrays)
+            myArrays.removeAt(1)
+            println(myArrays)
+            myArrays.forEach{
+              println(it)
+
+            }
+
+
 
 
 
